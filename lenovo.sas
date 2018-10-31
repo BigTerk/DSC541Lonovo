@@ -43,9 +43,13 @@ data lenovo2;
 
 	Date=datepart(date);
 	 FG_new= rand('integer', 1, 5);**Random Number Generator;
+	FGShared =rand('integer', 1, 5);**Random Number Generator;
+	if FG_new eq FGShared then do;
+			FGSHARED=FGSHARED - 1;
+	end;
 	
-	if quantity eq 2 then do;
-		FGShared =rand('integer', 1, 5);**Random Number Generator;
+	if FGshared eq 0 then do;
+		FGSHARED=FGSHARED+2;
 	end;
 	
 	format date date9.;
@@ -76,5 +80,5 @@ run;
  
  %ds2csv (data=work.lenovo2, 
  					runmode=b, 
- 					csvfile=F:\Lenovo\new_lenovo.csv);
+ 					csvfile=F:\Lenovo\new2_lenovo.csv);
  
