@@ -49,6 +49,8 @@ data lenovo2;
 	end;
 	
 	format date date9.;
+	
+	drop fg;
 run;
 
 proc sort data=lenovo2;
