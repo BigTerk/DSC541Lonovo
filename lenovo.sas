@@ -42,17 +42,17 @@ data lenovo2;
 	by plant;
 
 	Date=datepart(date);
-	compNum = rand('integer', 1, 18);**Random Number Generator;
+	 FG_new= rand('integer', 1, 5);**Random Number Generator;
 	
 	if quantity eq 2 then do;
-		compShared =rand('integer', 1, 18);**Random Number Generator;
+		FGShared =rand('integer', 1, 5);**Random Number Generator;
 	end;
 	
 	format date date9.;
 run;
 
 proc sort data=lenovo2;
-	by compnum;
+	by fg_new;
 run;
 ***************************************************************************
 **MACRO to split Finished Goods into two different datasets
