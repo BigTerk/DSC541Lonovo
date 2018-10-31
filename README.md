@@ -16,3 +16,11 @@ calculated while maximizing the serviceability of finish goods.
 Definition of serviceability: the probability of not stock-out when an order is placed. One month serviceability is calculated by the
 number of orders that delayed by stock-out/the total number of orders in this month. The quantity of products in one order 
 does not impact serviceability.
+
+### Meeting Updates - 10/31/18
+- Randomize 5 new FG
+- Find proportion of shared parts between current available FG
+- Need to generate random orders (# distinct FG, Qty of each FG, Poisson Distribution)
+- Consider median around 20
+- Reference:  numpy.random.poisson(lam=1.0, size=None)
+- Determine stock levels for each part in inventory
