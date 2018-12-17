@@ -34,7 +34,7 @@ each of the noise levels provided.
         - 2a) To run properly, the notebook must be run on a local network
         - 2b) The "finished_good_parts.csv" must be imported from the GitHub as well
   3) The resulting csv files of the simulation will be produced and stored in the "Sericeability_Output" folder
-        - 3a) The "Sericeability_Output" will result in a zip file. This must be unziped to view the serviceability csvs
+        - 3a) The "Sericeability_Output" will result in a zip file. This must be unziped to view the serviceability csv files
   4) The overall mean serviceabilities can be determined by running the "mean_csv(2).ipynb" Jupyter Notebook
-        - 4a) Important note: the "mean_csv(2).ipynb" notebook will only work if the csvs from the "Sericeability_Output"  and the 
+        - 4a) Important note: the "mean_csv(2).ipynb" notebook will only work if the csv files from the "Sericeability_Output"  and the 
             "mean_csv(2).ipynb" notebook are contained in the same folder
